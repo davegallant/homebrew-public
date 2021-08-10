@@ -11,14 +11,14 @@ class Vpngate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/davegallant/vpngate/releases/download/v0.1.0/vpngate_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "0b05e78c68d627137ee31de5a6f5be5ade08cb74fa819798f4671ee634311098"
+      sha256 "f6ad9c8317b478e450757338db364e235bf097e283e774546c38fe0da49db13b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/davegallant/vpngate/releases/download/v0.1.0/vpngate_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "8149cce65e4e658df1774f2d88b034daf70d95978700cfed9597010778d1017a"
+      sha256 "1f4066271ce179f7e9c3842da71d0455932221ff2dee89c55fd89db3ff17e7c1"
     end
   end
 
