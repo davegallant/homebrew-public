@@ -5,9 +5,9 @@ class Rfd < Formula
   desc 'view RedFlagDeals.com from the command line'
   homepage 'https://forums.redflagdeals.com'
   license 'GNU General Public License v3.0'
-  url 'https://files.pythonhosted.org/packages/36/59/976d82315cd277ee0594799db8e045b763ce8aef17a3dd3283d2489e2afd/rfd-0.7.2.tar.gz'
-  sha256 '4a71dce31fa0259c8702fdd76cbcf938e3363245754a96ad38b6ed982885bc51'
-  version '0.7.2'
+  url 'https://files.pythonhosted.org/packages/df/0a/93fe3fc1261550ad4e684a6f4bdba7dc1b365489a21b71f1463d53b13499/rfd-0.8.0.tar.gz'
+  sha256 '1527db15c24d4dcb7efd99814b9cff51b78279227920f5ab1dd5cc55301c704b'
+  version '0.8.0'
 
   depends_on 'python@3.9'
 
