@@ -10,7 +10,7 @@ class Vpngate < Formula
   on_macos do
     on_intel do
       url "https://github.com/davegallant/vpngate/releases/download/v0.3.0-beta1/vpngate_0.3.0-beta1_darwin_amd64.tar.gz"
-      sha256 "8b1cd15274cf5f0784ad0990e090acb1623547595c9ccc1bf1effeca7c03a728"
+      sha256 "aafc65bb705a75e68323ed717a8fe9a6e06466cff059b11932eb63fdc29d3535"
 
       def install
         bin.install "vpngate"
@@ -18,7 +18,7 @@ class Vpngate < Formula
     end
     on_arm do
       url "https://github.com/davegallant/vpngate/releases/download/v0.3.0-beta1/vpngate_0.3.0-beta1_darwin_arm64.tar.gz"
-      sha256 "ae27c2c83a1fbe3e7d392e45b8ac352db08d9462782d84e5e23694d8374a3215"
+      sha256 "f46187361fc1025ef4b3849e3a5f35a468d5626e1d5f78829ec5e62010dae332"
 
       def install
         bin.install "vpngate"
@@ -30,7 +30,7 @@ class Vpngate < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/davegallant/vpngate/releases/download/v0.3.0-beta1/vpngate_0.3.0-beta1_linux_amd64.tar.gz"
-        sha256 "de5771ed0600ff54cb680d7e74a8315b1d354166d51d6fd314efe118924c3875"
+        sha256 "da7a18645719b173b19bf90ab65ecf01ab959f57807dd40c3953a2b24a6be4e3"
 
         def install
           bin.install "vpngate"
@@ -40,7 +40,7 @@ class Vpngate < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/davegallant/vpngate/releases/download/v0.3.0-beta1/vpngate_0.3.0-beta1_linux_arm64.tar.gz"
-        sha256 "16c260e42572534b273c3e63234ab4a23aef58bdec725904e316b1a485c64b48"
+        sha256 "e8ec36ca5d7d90453725fde4318ba9702e0704da6a80892bbffde7d1a7eb8d34"
 
         def install
           bin.install "vpngate"
