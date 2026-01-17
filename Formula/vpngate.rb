@@ -5,20 +5,20 @@
 class Vpngate < Formula
   desc "a client for vpngate.net"
   homepage "https://github.com/davegallant/homebrew-public"
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.3.2/vpngate_0.3.2_darwin_amd64.tar.gz"
-      sha256 "ab01951724ab9905f7201060ec43c4e20d85f57a4e8caf31e554096e151ca8f3"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.3.3/vpngate_0.3.3_darwin_amd64.tar.gz"
+      sha256 "4d834457b8af9c969231877c931e19214a3494e1a942fcb649f07f01344eeb37"
 
       def install
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.3.2/vpngate_0.3.2_darwin_arm64.tar.gz"
-      sha256 "eb06f92d2d9efd226043672e5bd9c807303e66a6d3bded7586a1005979352ece"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.3.3/vpngate_0.3.3_darwin_arm64.tar.gz"
+      sha256 "22a38aaba1cda485367f414359f2674ef50e50bd06d40099fb84d9bcc0d803e2"
 
       def install
         bin.install "vpngate"
@@ -28,15 +28,15 @@ class Vpngate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.3.2/vpngate_0.3.2_linux_amd64.tar.gz"
-      sha256 "c69ef4e882593b34e1ae4d90e1872d0e59953c595f66c4de0a057b7b9efe73c9"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.3.3/vpngate_0.3.3_linux_amd64.tar.gz"
+      sha256 "bfd66aeac5cb301250ce0239649a2d970c329c6dc92c1e8f0275853d4de9579a"
       def install
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.3.2/vpngate_0.3.2_linux_arm64.tar.gz"
-      sha256 "e7aa96abda02f096a865732671a59b378c258e4bd7c17b9afcc88c2a41050c5c"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.3.3/vpngate_0.3.3_linux_arm64.tar.gz"
+      sha256 "4903793751cd6f22f320ab6b1cbe0878b5ad627f1a37dee8fdd066cb3afa9089"
       def install
         bin.install "vpngate"
       end
