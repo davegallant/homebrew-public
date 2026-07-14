@@ -5,20 +5,20 @@
 class Vpngate < Formula
   desc "a client for vpngate.net"
   homepage "https://github.com/davegallant/homebrew-public"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.4.0/vpngate_0.4.0_darwin_amd64.tar.gz"
-      sha256 "7d857b4c588744db90fc957d425730614d0e436bb554a7f97329aac101926e43"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_darwin_amd64.tar.gz"
+      sha256 "c9fa4b9373f00d1d534cb2435410f387551d8b0743489b522cc45c247ccb933c"
 
       define_method(:install) do
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.4.0/vpngate_0.4.0_darwin_arm64.tar.gz"
-      sha256 "199cd052fe974c3d3839d114e731efa49e09bf5c91d2afe930c7322ca738314e"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_darwin_arm64.tar.gz"
+      sha256 "cba60eade458939d6ac174d3f76293592818539aa16fdb712927b48d35aca827"
 
       define_method(:install) do
         bin.install "vpngate"
@@ -28,15 +28,15 @@ class Vpngate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.4.0/vpngate_0.4.0_linux_amd64.tar.gz"
-      sha256 "c2ed03eb0f0f77a851b3f345146c02fb6f18d0caef284e4cd62dc1051a7b7c5f"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_linux_amd64.tar.gz"
+      sha256 "74b3af02996de75051f53979567747ae9c07aeb181cfb141d87a6e73b9fba7f9"
       define_method(:install) do
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.4.0/vpngate_0.4.0_linux_arm64.tar.gz"
-      sha256 "bc67337981f178cd15fbde501d872c0d60cb1662478fe146926d1a311a6ba91d"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_linux_arm64.tar.gz"
+      sha256 "a4e684dd3dc89d3e6d6d143d7d40fbd71575ad606d2a13e8e4a9b6905576a9fc"
       define_method(:install) do
         bin.install "vpngate"
       end
