@@ -10,7 +10,7 @@ class Pvectl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d5f5c9d3cc09326ac9245d0a196c3de2c51249b3d18f0ccbe47886e388df0ca8"
+      sha256 "a7ede65afd0cf96ae99569338a7ec09964ab0ea5043c1a65d33738f2f4c7f21b"
 
       define_method(:install) do
         bin.install "pvectl"
@@ -18,7 +18,7 @@ class Pvectl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "14317ef84537c48bbc340125a1c181feba99e095fad363516dd5ba25cd74ea63"
+      sha256 "aff57cc382928e9b59170242388eec113182efa8c2afc04ff78d6ecce2ac84d3"
 
       define_method(:install) do
         bin.install "pvectl"
@@ -29,14 +29,14 @@ class Pvectl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_linux_amd64.tar.gz"
-      sha256 "302c82a140a70e4e69de1de068c3317a7229a351745536c85617d9bc6c149499"
+      sha256 "d46cdceee7fa2bd9f78df2354da3c9a12bdc453a2ea190039d25ae007ae1f8a0"
       define_method(:install) do
         bin.install "pvectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_linux_arm64.tar.gz"
-      sha256 "93430ae671a81fd875b22cc187fca10f2cb0d2ea2777c9840e45025dfa23d496"
+      sha256 "9a61322ecb8d2f56f482baf2d1a21a1348f711e9e522f74186053c6fc39d4a5d"
       define_method(:install) do
         bin.install "pvectl"
       end
