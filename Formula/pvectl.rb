@@ -5,20 +5,20 @@
 class Pvectl < Formula
   desc "CLI for managing a Proxmox VE cluster over the REST API"
   homepage "https://github.com/davegallant/homebrew-public"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a7ede65afd0cf96ae99569338a7ec09964ab0ea5043c1a65d33738f2f4c7f21b"
+      url "https://github.com/davegallant/pvectl/releases/download/v0.2.0/pvectl_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2fb539ff20013245d958c08f2df3fc766aa0e54c82a7250e4d580b08d6ab8fcd"
 
       define_method(:install) do
         bin.install "pvectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "aff57cc382928e9b59170242388eec113182efa8c2afc04ff78d6ecce2ac84d3"
+      url "https://github.com/davegallant/pvectl/releases/download/v0.2.0/pvectl_0.2.0_darwin_arm64.tar.gz"
+      sha256 "1b79a48602fd32bbe131cd2451fc5e7e127ace773b3c872bc8ab48241e2d895d"
 
       define_method(:install) do
         bin.install "pvectl"
@@ -28,15 +28,15 @@ class Pvectl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_linux_amd64.tar.gz"
-      sha256 "d46cdceee7fa2bd9f78df2354da3c9a12bdc453a2ea190039d25ae007ae1f8a0"
+      url "https://github.com/davegallant/pvectl/releases/download/v0.2.0/pvectl_0.2.0_linux_amd64.tar.gz"
+      sha256 "eadfda01e3ebe86f2b2e16d6a856984e7c830dbd62b4ebfb3d480222118713ad"
       define_method(:install) do
         bin.install "pvectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/pvectl/releases/download/v0.1.0/pvectl_0.1.0_linux_arm64.tar.gz"
-      sha256 "9a61322ecb8d2f56f482baf2d1a21a1348f711e9e522f74186053c6fc39d4a5d"
+      url "https://github.com/davegallant/pvectl/releases/download/v0.2.0/pvectl_0.2.0_linux_arm64.tar.gz"
+      sha256 "fc023415ff1461fd84e0abde2282bf767246c82b0e12651c0432ad212fa9e9bf"
       define_method(:install) do
         bin.install "pvectl"
       end
