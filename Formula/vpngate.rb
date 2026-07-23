@@ -5,20 +5,20 @@
 class Vpngate < Formula
   desc "a client for vpngate.net"
   homepage "https://github.com/davegallant/homebrew-public"
-  version "0.5.0"
+  version "0.6.0-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_darwin_amd64.tar.gz"
-      sha256 "c9fa4b9373f00d1d534cb2435410f387551d8b0743489b522cc45c247ccb933c"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.6.0-rc1/vpngate_0.6.0-rc1_darwin_amd64.tar.gz"
+      sha256 "528939380bbdd0be940a67f9586a34282d22d8c50de0b9d90ed6664c07034f6d"
 
       define_method(:install) do
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_darwin_arm64.tar.gz"
-      sha256 "cba60eade458939d6ac174d3f76293592818539aa16fdb712927b48d35aca827"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.6.0-rc1/vpngate_0.6.0-rc1_darwin_arm64.tar.gz"
+      sha256 "299495d4c4a2dabc81bdd305c9a5008a1e689a66e7c4a17a684af66ae341e7e2"
 
       define_method(:install) do
         bin.install "vpngate"
@@ -28,15 +28,15 @@ class Vpngate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_linux_amd64.tar.gz"
-      sha256 "74b3af02996de75051f53979567747ae9c07aeb181cfb141d87a6e73b9fba7f9"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.6.0-rc1/vpngate_0.6.0-rc1_linux_amd64.tar.gz"
+      sha256 "c6f0b6da9f09f9c6f456d5bbeebab81787887900eddc7385153f4c01b5182ae4"
       define_method(:install) do
         bin.install "vpngate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davegallant/vpngate/releases/download/v0.5.0/vpngate_0.5.0_linux_arm64.tar.gz"
-      sha256 "a4e684dd3dc89d3e6d6d143d7d40fbd71575ad606d2a13e8e4a9b6905576a9fc"
+      url "https://github.com/davegallant/vpngate/releases/download/v0.6.0-rc1/vpngate_0.6.0-rc1_linux_arm64.tar.gz"
+      sha256 "9bddc43e44062355a0e481922d65e16326000e816262f6c3f09795145a58f18a"
       define_method(:install) do
         bin.install "vpngate"
       end
